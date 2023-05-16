@@ -11,7 +11,7 @@
             </li>
 
             <li class="me-2">
-                <a href="">COMICS</a>    
+                <a href="{{route('comics.index')}}">COMICS</a>    
             </li>
 
             <li class="me-2">
