@@ -39,13 +39,8 @@ class ComicController extends Controller
         $form_data = $request->all();
 
         $newComic = new Comic();
-        $newComic->title = $form_data["title"];
-        $newComic->description = $form_data["description"];
-        $newComic->thumb = $form_data["thumb"];
-        $newComic->price = $form_data["price"];
-        $newComic->series = $form_data["series"];
-        $newComic->sale_date = $form_data["sale_date"];
-        $newComic->type = $form_data["type"];
+
+        $newComic->fill($form_data);
         
 
         $newComic->save();
@@ -100,8 +95,9 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Comic $comic)
     {
-        //
+        $comic->delete();
+            return redirect()->route('comics.index');
     }
 }
