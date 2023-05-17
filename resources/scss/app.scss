@@ -1,5 +1,9 @@
 @import '~bootstrap/scss/bootstrap';
 
+main {
+    margin-bottom: 4rem;
+}
+
 .ms_blue_banner_header {
     height: 30px;
     background-color: rgb(2, 131, 251);
@@ -24,11 +28,6 @@ a {
     color: black;
 }
 
-.jumbotron {
-    height: 30px;
-   overflow-y: hidden;
-}
-
 .jumbotron_img {
     width: 100%;
 }
@@ -37,6 +36,9 @@ a {
     background-color: rgb(28, 28, 28);
     width: 100%;
     height: 70px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     
 }
 
@@ -44,4 +46,43 @@ a {
     color: blue;
 }
 
+.ms_movies {
+    text-align: end;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-right: 1rem;
+}
+
+.ms_comics {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 1rem;
+}
+
+.ms_characters {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 1rem;
+}
+
+.ms_comics_container{
+    height: 200px;
+    background-color: rgb(3, 3, 89);
+    padding-top: 80px;
+    background-image: url(https://img.freepik.com/free-vector/flat-design-bright-comics-wallpaper_23-2148799406.jpg?w=996&t=st=1684329654~exp=1684330254~hmac=41f8627b7119901d1498b807459f405446b2974611340faef9b6d199f21f158a);
+    background-size: cover;
+}
+
+.ms_movies_container{
+    height: 200px;
+    background-color: rgb(158, 158, 158);
+    padding-top: 80px;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210309/pngtree-rich-and-beautiful-pop-style-blue-background-image_581322.jpg);
+    background-size: cover;
+}
+
+.ms_characters_container{
+    height: 200px;
+    background-color: rgb(3, 3, 89);
+    padding-top: 80px;
+    background-image: url(https://img.freepik.com/free-vector/flat-design-bright-comics-wallpaper_23-2148799406.jpg?w=996&t=st=1684329654~exp=1684330254~hmac=41f8627b7119901d1498b807459f405446b2974611340faef9b6d199f21f158a);
+    background-size: cover;
+}
 
