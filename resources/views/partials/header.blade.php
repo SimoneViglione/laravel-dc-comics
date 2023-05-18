@@ -7,7 +7,7 @@
         <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="" class="ms_logo">
         <ul class="d-flex mt-3">
             <li class="me-2">
-                <a href="">CHARACTERS</a>
+                <a href="{{route('home')}}">CHARACTERS</a>
             </li>
 
             <li class="me-2">
@@ -15,12 +15,8 @@
             </li>
 
             <li class="me-2">
-                <a href="">MOVIES</a>
+                <a href="{{route('home')}}">MOVIES</a>
             </li>
         </ul>
-    </div>
-
-    <div class="jumbotron">
-        <img src="{{Vite::asset('resources/img/jumbotron.jpg')}}" alt="" class="jumbotron_img">
     </div>
 </header>
